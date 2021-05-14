@@ -1,0 +1,920 @@
+/* 
+    ------------------------ Tag Selectors Starts Here -----------------------------
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    background-color: #f4eee8;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 550px;
+    background-color: #325288;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    line-height: 1;
+    font-family: 'Sacramento', cursive;
+    text-shadow: 2px 4px 5px #b8b5ff;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+}
+
+h2 {
+    text-align: center;
+    line-height: 1;
+    margin: 30px auto 0 auto;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 4px 5px #b8b5ff;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+}
+
+hr {
+    border-style: dotted none none;
+    width: 7%;
+    border-width: 0.25rem;
+    border-color: #b8b5ff;
+    margin: 5px auto;
+}
+
+p {
+    color: #fff;
+}
+
+article {
+    font-weight: 500;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(72,71,100,0.7), rgba(0,0,0,0.9));
+    z-index: 10;
+}
+
+.overlay i {
+    display: block;
+    position: relative;
+    font-size: 112px;
+    color: #fff;
+    margin: 15% auto 0;
+    width: 112px;
+}
+
+.overlay-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 20px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.action-btn {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    width: 410px;
+    z-index: 10;
+}
+
+/* 
+    ------------------------ Tag Selectors Ends Here -----------------------------
+*/
+
+/* 
+    ------------------------ Header Section Starts Here -----------------------------
+*/
+
+#header-section {
+    padding: 3% 15% 7%;
+    height: 100%;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1rem 2rem;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.nav-link:hover {
+    text-shadow: 2px 4px 5px #b8b5ff;
+}
+
+.navbar-brand {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 600;
+    float: left;
+    font-family: 'Sacramento', cursive;
+}
+
+.navbar-brand:hover {
+    text-shadow: 2px 4px 5px #b8b5ff;
+}
+
+.collapse-navbar-brand {
+    display: none;
+}
+
+.navbar-toggler {
+    color: #fff;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+}
+
+.navbar-toggler-icon {
+    padding-top: 5px;
+}
+
+.navigation-bar {
+    position: fixed;
+}
+
+.brand {
+    /* position: absolute; */
+    animation-name: left-to-right;
+    animation-duration: 2s;
+}
+
+.button-container {
+    width: 100%;
+    margin: 50px 0;
+    float: center;
+}
+
+.download-btn {
+    display: block;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: auto;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 3px 3px 4px #b8b5ff;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+}
+
+.download-btn:hover {
+    box-shadow: 1px 1px 4px #b8b5ff;
+    transform: translate(2px, 2px);
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-sec {
+    margin: 40px auto;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: aliceblue;
+    border: 10px solid #fff;
+    box-shadow: 5px 10px 15px #b8b5ff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile-pic {
+    position: relative;
+    transform: scale(0.7, 0.7);
+    margin: -78px -66px;
+    z-index: 999;
+}
+
+.profile-sec:hover {
+    box-shadow: 7px 12px 15px #b8b5ff;
+    transform: translate(-4px, 4px);
+    animation-name: tumble;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.transparent-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    background-color: rgba(255, 255, 255, 0.1);
+    right: 0%;
+    z-index: -1;
+}
+
+/* 
+    ------------------------ Headers Section Ends Here -----------------------------
+*/
+
+/* 
+    ------------------------ About Me Section Starts Here --------------------------
+*/
+
+#about-me {
+    /* padding: 2rem 2rem; */
+    padding: 7% 15%;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #f4eee8;
+    font-weight: 600;
+    color: #325288;
+}
+
+#about-me h3, p {
+    color: #325288;
+}
+
+#about-me h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+#about-me p {
+    margin: 50px 0;
+}
+
+#about-me a {
+    color: #325288;
+}
+
+/* 
+    ----------------------- About Me Section Ends Here --------------------------
+*/
+
+/* 
+    ----------------------- Work Experience Section Starts Here -----------------
+*/
+
+#work-experience {
+    position: relative;
+    /* padding: 2rem 2rem; */
+    padding: 7% 15%;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #325288;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2;
+    z-index: 0;
+}
+
+#work-experience .heading {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 5px 0 20px;
+}
+
+#work-experience .sub-heading {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 5px 0 25px;
+}
+
+#work-experience article {
+    color: #fff;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+#work-experience strong {
+    font-weight: bolder;
+    font-size: 1.15rem;
+}
+
+/* 
+    ----------------------- Work Experience Section Starts Here -----------------
+*/
+
+/* 
+    ----------------------- Skills Section Starts Here --------------------------
+*/
+
+#skills {
+    /* padding: 2rem 2rem; */
+    padding: 7% 15%;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #f4eee8;
+    font-weight: 600;
+    color: #325288;
+}
+
+#skills .list-no-style {
+    list-style: none;
+}
+
+#skills .heading {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 5px 0 20px;
+}
+
+#skills progress {
+    display: block;
+    width: 90%;
+    height: 20px;
+    border: 0;
+    margin: 0px 0 10px;
+}
+
+#skills progress::-webkit-progress-bar {
+    background-color: #dddddd;
+    color: red;
+}
+
+#skills progress::-webkit-progress-value {
+    background-color: #325288;
+    transition: background-color 2s ease-in-out;
+}
+
+#skills progress::-webkit-progress-value:hover {
+    background-color: #b8b5ff;
+}
+
+#skills li {
+    margin: 0 15%;
+}
+
+#skills ul {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#skills li ul label {
+    display: block;
+    margin: 2.5px 10px;
+    margin: 10px 0;
+}
+
+/* 
+    ----------------------- Skills Section Ends Here --------------------------
+*/
+
+/*
+    ------------------------ Education Section Starts Here ----------------------
+*/
+
+#education {
+    position: relative;
+    /* padding: 2rem 2rem; */
+    padding: 7% 15%;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #325288;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1;
+    z-index: 0;
+}
+
+#education ul {
+    line-height: 2;
+}
+
+/*
+    ------------------------ Education Section Ends Here ----------------------
+*/
+
+/*
+    ------------------------ social-media Section Starts Here ----------------------
+*/
+
+#social-media {
+    position: relative;
+    /* padding: 2rem 2rem; */
+    padding: 7% 15%;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #325288;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2;
+    z-index: 0;
+}
+
+#social-media ul {
+    line-height: 2;
+}
+
+#social-media a {
+    color: #fff;
+}
+
+/*
+    ------------------------ Education social-media Ends Here ----------------------
+*/
+
+/*
+    ------------------------ Other Skills Section Starts Here ----------------------
+*/
+
+#other-skills {
+    /* padding: 2rem 2rem; */
+    padding: 7% 15%;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #f4eee8;
+    font-weight: 600;
+    color: #325288;
+}
+
+#other-skills h3, p {
+    color: #325288;
+}
+
+#other-skills h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+#other-skills p {
+    margin: 50px 0;
+}
+
+#other-skills ul {
+    line-height: 2;
+}
+
+/*
+    ------------------------ Other Skills Section Ends Here ----------------------
+*/
+
+/*
+    ------------------------ Other Skills Section Ends Here ----------------------
+*/
+
+footer {
+    padding: 2rem 2rem;
+    animation-name: fade-in;
+    animation-duration: 5.0s;
+    background-color: #f4eee8;
+    font-weight: 600;
+    color: #325288;
+    text-align: center;
+}
+
+footer i {
+    font-size: 2rem;
+    margin: 10px 5px;
+    color: #325288;
+}
+
+footer p {
+    margin: 5px auto;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #325288;
+}
+
+/*
+    ------------------------ Other Skills Section Ends Here ----------------------
+*/
+
+/* 
+    ----------------------- Common Section Starts Here --------------------------
+*/
+
+.text-align-right {
+    float: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.padding-tb-2-lr-10 {
+    padding: 2% 10%;
+}
+
+.line-height-2-5 {
+    line-height: 2.5;
+}
+
+.padding-r-100 {
+    padding-right: 100px;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 5px 0 20px;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 5px 0 25px;
+}
+
+/* 
+    ----------------------- Common Section Ends Here --------------------------
+*/
+
+.water-mark {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff, #325288, #b8b5ff);
+    top: 16%;
+    left: 2%;
+    z-index: -1;
+}
+
+.water-mark_1 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff, #325288, #b8b5ff);
+    top: 56%;
+    left: 85%;
+    z-index: -1;
+}
+
+.water-mark_2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    top: 21%;
+    left: 27%;
+    z-index: -1;
+}
+
+.water-mark_4 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    top: 7%;
+    right: 9%;
+    z-index: -1;
+}
+
+.water-mark_5 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    top: 12%;
+    right: 3%;
+    z-index: -1;
+}
+
+.water-mark_6 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    bottom: 5%;
+    left: 3%;
+    z-index: -1;
+}
+
+.water-mark_7 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    bottom: 7%;
+    left: 33%;
+    z-index: -1;
+}
+
+.water-mark_8 {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    top: 16%;
+    left: 62%;
+    z-index: -1;
+}
+
+.water-mark_9 {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff 5%, #325288 54%, #b8b5ff 74%);
+    bottom: 16%;
+    right: 32%;
+    z-index: -1;
+}
+
+.water-mark_3 {
+    position: relative;
+    margin: 0px auto;
+    height: 10px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #b8b5ff;
+    background-image: radial-gradient(circle, #fff, #325288, #fff);
+}
+
+/* 
+    ----------------------- Animation Section Starts Here ---------------------
+*/
+
+@keyframes left-to-right {
+    from {
+        position: relative;
+        margin-left: -200px;
+    }
+    to {
+        position: relative;
+        margin-left: 0px;
+    }
+}
+
+@keyframes tumble {
+    0% {
+        transform: rotate(-10deg);
+    }
+    5% {
+        transform: rotate(-8deg);
+    }
+    10% {
+        transform: rotate(-6deg);
+    }
+    15% {
+        transform: rotate(-4deg);
+    }
+    20% {
+        transform: rotate(-2deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(2deg);
+    }
+    35% {
+        transform: rotate(4deg);
+    }
+    40% {
+        transform: rotate(6deg);
+    }
+    45% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    55% {
+        transform: rotate(8deg);
+    }
+    60% {
+        transform: rotate(6deg);
+    }
+    65% {
+        transform: rotate(4deg);
+    }
+    70% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    85% {
+        transform: rotate(-4deg);
+    }
+    90% {
+        transform: rotate(-6deg);
+    }
+    95% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes progress-animate {
+    from {
+        height: 25px;
+    }
+    to {
+        transform: 20px;
+    }
+}
+
+/* 
+    ----------------------- Animation Section Ends Here ---------------------
+*/
+
+@media (max-width: 1028px) {
+    .navbar {
+        text-align: left;
+    }
+    .navbar-brand {
+        display: none;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .collapse-navbar-brand {
+        color: #fff;
+        margin: 0;
+        display: inline-block;
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-family: 'Sacramento', cursive;
+    }
+    .collapse-navbar-brand:hover {
+        text-shadow: 2px 4px 5px #b8b5ff;
+    }
+    .profile-sec {
+        margin: auto;
+    }
+    h1 {
+        font-size: 3.625rem;
+    }
+    header {
+        height: 100%;
+    }
+    .water-mark_1 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        text-align: left;
+    }
+    .navbar-brand {
+        display: none;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .collapse-navbar-brand {
+        color: #fff;
+        margin: 0;
+        display: inline-block;
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-family: 'Sacramento', cursive;
+    }
+    .collapse-navbar-brand:hover {
+        text-shadow: 2px 4px 5px #b8b5ff;
+    }
+    .profile-sec {
+        margin: auto;
+    }
+    h1 {
+        font-size: 3.625rem;
+    }
+    header {
+        height: 100%;
+    }
+    .water-mark_1 {
+        display: none;
+    }
+    h2 {
+        width: 50%;
+        text-align: center;
+    }
+    .water-mark_3 {
+        display: none;
+    }
+    .water-mark {
+        display: none;
+    }
+    .water-mark_2 {
+        top: 8%
+    }
+    #about-me {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+    .padding-r-100 {
+        padding: 0;
+    }
+    .contact-info {
+        padding: 0;
+        text-align: left;
+    }
+    #work-experience {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+    #skills {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+    #education {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+    #other-skills {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+    #social-media {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+    li {
+        list-style-type: none;
+    }
+}
+
+/*
+Print Functionality
+*/
+
+@media print {
+    .download-btn {
+        visibility: hidden;
+    }
+    .header {
+        position: relative;
+        margin: 0;
+        padding: 50px 0;
+        height: 450px;
+        background-color: #325288;
+    }
+    .water-mark_2 {
+        z-index: 999;
+    }
+    .water-mark_1 {
+        z-index: 999;
+    }
+    .transparent-bg {
+        z-index: 999;
+    }
+}
+
+.profile-pic10 {
+    width: 10px;
+    height: 10px;
+}
